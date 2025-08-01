@@ -39,6 +39,12 @@ I should be able to see the task I just added in the list below the input.
 ### Actual Behavior
 Task counter increases but no tasks are visible anywhere.
 
+## Identified Cause of Issue
+
+![alt text](image.png)
+
+When clicking on the "Completed task", if the tab that's selected is either on "Completed" then the above happens as described
+
 ---
 
 ## 📋 **Issue #2: "Filter buttons don't actually filter anything"**
@@ -68,6 +74,10 @@ I have a mix of completed and uncompleted tasks, and no matter which filter butt
 ### Actual Behavior
 All three buttons show exactly the same thing - every single task regardless of completion status.
 
+## Cause of Issue
+
+## Fix
+Uncomment line **162** to enable the re-rendering of tasks as the tasks get filtered
 ---
 
 ## 📋 **Issue #3: "My tasks disappear when I refresh the page (sometimes)"**
